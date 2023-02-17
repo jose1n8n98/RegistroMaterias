@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3">
+
+  <h3 class="text-center">
+    Registro de Asignatura
+  </h3>
+
+  <form (ngSubmit)="onSubmit">
+    <div class="form-group">
+      <label >Nombre de Asignatura:</label>
+      <input type="text" class="form-control"
+      id="asignatura"
+      [(ngModel)]="asignatura.asignatura"
+      name="asignatura">
+    </div>
+    <div class="form-group">
+      <label >Descripción de Asignatura:</label>
+      <input type="text" class="form-control"
+      id="asignatura"
+      [(ngModel)]="asignatura.descripcion"
+      name="asignatura">
+    </div>
+    <button class="btn btn-success">Guardar</button>
+  </form>
+
+</div>

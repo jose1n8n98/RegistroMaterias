@@ -1,0 +1,24 @@
+<h2>Lista Horario</h2>
+
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Asignatura</th>
+      <th>Hora de inicio</th>
+      <th>Hora de finalizacion</th>
+      <th>Día</th>
+      <th>Aula</th>
+      <th>Profesor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let horario of horarios">
+      <td>Juan</td>
+      <td> {{horario.hora_inicio}} </td>
+      <td> {{horario.hora_fin}} </td>
+      <td> {{horario.dia}} </td>
+      <td> {{horario.id_aula}} </td>
+      <td> {{horario.cod_profesor}} </td>
+    </tr>
+  </tbody>
+</table>
